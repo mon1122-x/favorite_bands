@@ -8,14 +8,16 @@ interface FavoriteBandProps {
 export default function FavoriteBandCard({ band }: FavoriteBandProps) {
   return (
     <div className="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden shadow-lg flex flex-col h-full hover:border-sky-500 transition-all duration-300">
-      <div className="relative h-48 w-full overflow-hidden">
-        <Image
-          src={band.picture}
-          alt={band.name}
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-cover hover:scale-105 transition-transform duration-500"
-        />
+      <div className="p-4 pb-0">
+        <div className="relative w-full rounded-lg overflow-hidden">
+          <Image
+            src={band.picture}
+            alt={band.name}
+            width={800}
+            height={600}
+            className="w-full h-auto object-cover rounded-lg hover:scale-105 transition-transform duration-500"
+          />
+        </div>
       </div>
 
       <div className="p-6 flex flex-col flex-grow">

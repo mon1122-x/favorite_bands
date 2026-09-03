@@ -4,6 +4,7 @@ export const favorite_band_data: favorite_band[] = [
   {
     picture: "/images/bands/Lipta.jpg",
     name: "Lipta",
+    
     description: `วงลิปตาก่อตั้งขึ้นในปี พ.ศ. 2548...`,
     members: [
       { name: "คัดโตะ", image: "/images/members/khadto.jpg", role: "นักร้องนำ" },
